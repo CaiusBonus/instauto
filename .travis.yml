@@ -19,3 +19,10 @@ script:
 env:
   INSTAUTO_TESTS_USERNAME: test_username
   INSTAUTO_TESTS_PASSWORD: test_password
+
+notifications:
+  email:
+    recipients:
+      - maros.gonda.mladsi@gmail.com
+    on_success: change 
+    on_failure: always 
