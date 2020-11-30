@@ -24,5 +24,5 @@ notifications:
   email:
     recipients:
       - maros.gonda.mladsi@gmail.com
-    on_success: change 
+    on_success: always 
     on_failure: always 
