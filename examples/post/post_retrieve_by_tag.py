@@ -13,6 +13,7 @@ if __name__ == '__main__':
         client.save_to_disk('./.instauto.save')
 
 
+print('devops test')
 
 s = se.Tag('instagram', 1)
 resp = client.search_tag(s).json()
