@@ -23,6 +23,13 @@ env:
 notifications:
   email:
     recipients:
-      - maros.gonda.mladsi@gmail.com
+      - maros.gonda@student.tuke.sk
     on_success: always 
     on_failure: always 
+
+before_deploy:
+  - python -m pip install --upgrade pip
+  - pip install setuptools wheel twine
+  
+deploy:
+  python setup.py sdist bdist_wheel
