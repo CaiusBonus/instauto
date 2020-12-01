@@ -13,7 +13,7 @@ class TestSearch(unittest.TestCase):
         s.fill(client)
         helper(s, self)
 
-    def test_tag(self):
+    def test_username(self):
         client = ApiClient(testing=True)
         s = sr.Username("test",1)
         s.fill(client)

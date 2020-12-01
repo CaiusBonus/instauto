@@ -16,6 +16,7 @@ class Username(cmmn.Base):
         super().__init__(*args, **kwargs)
 
 class Tag(cmmn.Base):
+    REQUEST = "post/search.json"
     q: str
     count: int
 
