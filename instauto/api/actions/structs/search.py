@@ -3,6 +3,8 @@ import time
 
 
 class Username(cmmn.Base):
+    REQUEST = "post/search.json"
+
     timezone_offset: int
     q: str
     count: int
