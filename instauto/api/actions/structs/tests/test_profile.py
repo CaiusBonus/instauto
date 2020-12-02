@@ -10,7 +10,12 @@ class TestProfile(unittest.TestCase):
         s = pf.SetGender("male")
         s.fill(client)
 
-    def test_username(self):
+    def test_setBiography(self):
         client = ApiClient(testing=True)
         s = pf.SetBiography("I am here")
+        s.fill(client)
+
+    def test_Info(self):
+        client = ApiClient(testing=True)
+        s = pf.Info(1358549127)
         s.fill(client)
